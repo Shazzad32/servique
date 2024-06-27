@@ -1,303 +1,27 @@
-// import React from "react";
-// import image from "../Images/Group-713.png";
-// import { ServiceData, TextData } from "../datas";
-// import HomeSubFeature from "./HomeSubFeacher";
-// import TopDiv from "./TopDiv";
-
-// const Aboutus = () => {
-//   const ServiceItem = ServiceData[0];
-//   return (
-//     <div>
-//       <TopDiv
-//         title="About"
-//         text="This is about section to write details about"
-//         image={image}
-//       />
-//       <div
-//         style={{
-//           height: 300,
-//           width: "100%",
-//           display: "flex",
-//           alignItems: "center",
-//           justifyContent: "center",
-//         }}
-//       >
-//         <div style={{ width: "50%", textAlign: "center" }}>
-//           {TextData.map((item, i) => {
-//             return (
-//               <>
-//                 <p style={{ fontSize: 35, fontWeight: "bolder" }}>
-//                   A Customized Plan of action
-//                 </p>
-//                 <p style={{ fontSize: 20 }}>{item.text}</p>
-//               </>
-//             );
-//           })}
-//         </div>
-//       </div>
-//       <div
-//         style={{
-//           height: 400,
-//           width: "100%",
-//           display: "flex",
-//           alignItems: "center",
-//           justifyContent: "center",
-//           background: "#EEEEEE",
-//         }}
-//       >
-//         <div
-//           style={{
-//             height: "90%",
-//             width: "80%",
-//             display: "flex",
-//           }}
-//         >
-//           <div
-//             style={{
-//               flex: 5,
-//               display: "flex",
-//               alignItems: "center",
-//               justifyContent: "center",
-//             }}
-//           >
-//             <img src={image} style={{ height: "80%", width: "90%" }} alt="dd" />
-//           </div>
-//           <div style={{ flex: 5 }}>
-//             <p style={{ fontSize: 42, fontWeight: "bold", lineHeight: 1 }}>
-//               {" "}
-//               With a proven track record of achievments.
-//             </p>
-//             <p style={{ textAlign: "justify" }}>
-//               Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-//               Assumenda voluptatem repellat, consequuntur id aliquid aliquam
-//               tenetur accusantium, harum unde quis in, non fugiat veritatis
-//               possimus. Molestiae, odio ullam alias nobis consequuntur eius
-//               officia quam quo voluptatibus dolorum sit perspiciatis aliquam.
-//               Optio laborum autem exercitationem repellat ab. In cupiditate
-//               fugit sit id quae ratione fugiat quisquam vitae necessitatibus
-//             </p>
-//           </div>
-//         </div>
-//       </div>
-//       <div
-//         style={{
-//           height: 350,
-//           width: "100%",
-//           display: "flex",
-//           alignItems: "center",
-//           justifyContent: "center",
-//         }}
-//       >
-//         <div
-//           style={{
-//             height: "90%",
-//             width: "80%",
-//             background: "white",
-//             display: "flex",
-//             flexDirection: "column",
-//           }}
-//         >
-//           <div
-//             style={{
-//               height: "70%",
-//               width: "100%",
-//               display: "flex",
-//             }}
-//           >
-//             <div
-//               style={{
-//                 flex: 3.3,
-//                 flexDirection: "column",
-//                 lineHeight: 0.1,
-//               }}
-//             >
-//               <p
-//                 style={{
-//                   fontSize: 72,
-//                   fontWeight: "bolder",
-//                   textAlign: "center",
-//                   color: "#007F73",
-//                 }}
-//               >
-//                 200+
-//               </p>
-//               <p
-//                 style={{
-//                   textAlign: "center",
-//                 }}
-//               >
-//                 Lorem ipsum dolor Lorem ipsum dolor
-//               </p>
-//             </div>
-//             <div
-//               style={{
-//                 flex: 3.3,
-//                 flexDirection: "column",
-//                 lineHeight: 0.1,
-//               }}
-//             >
-//               <p
-//                 style={{
-//                   fontSize: 72,
-//                   fontWeight: "bolder",
-//                   textAlign: "center",
-//                   color: "#007F73",
-//                 }}
-//               >
-//                 50+
-//               </p>
-//               <p
-//                 style={{
-//                   textAlign: "center",
-//                 }}
-//               >
-//                 Jon Sites
-//               </p>
-//             </div>
-//             <div
-//               style={{
-//                 flex: 3.3,
-//                 flexDirection: "column",
-//                 lineHeight: 0.1,
-//               }}
-//             >
-//               <p
-//                 style={{
-//                   fontSize: 72,
-//                   fontWeight: "bolder",
-//                   textAlign: "center",
-//                   color: "#007F73",
-//                 }}
-//               >
-//                 100+
-//               </p>
-//               <p
-//                 style={{
-//                   textAlign: "center",
-//                 }}
-//               >
-//                 Lorem ipsum dolor Lorem ipsum dolor
-//               </p>
-//             </div>
-//           </div>
-//           <div
-//             style={{
-//               height: "30%",
-//               width: "100%",
-//               display: "flex",
-//               alignItems: "center",
-//               justifyContent: "center",
-//               textAlign: "center",
-//               fontSize: 18,
-//             }}
-//           >
-//             Lorem, ipsum dolor sit amet consectetur adipisicing elit.
-//             Dignissimos deserunt obcaecati enim maxime aliquid atque tempore
-//             repellat voluptatem, eum temporibus rem dolorum reiciendis deleniti
-//             consectetur minus unde quis, odio magnam doloribus recusandae
-//           </div>
-//         </div>
-//       </div>
-
-//       <div
-//         style={{
-//           height: 800,
-//           width: "100%",
-//           display: "flex",
-//           alignItems: "center",
-//           justifyContent: "center",
-//         }}
-//       >
-//         <div style={{ height: "90%", width: "85%" }}>
-//           {ServiceData.map((item, index) => {
-//             return (
-//               <>
-//                 <div
-//                   id={index}
-//                   style={{
-//                     height: 400,
-//                     width: "100%",
-//                     display: "flex",
-//                     flexDirection: index % 2 === 0 ? "row-reverse" : "row",
-//                   }}
-//                 >
-//                   <div
-//                     style={{
-//                       flex: 5,
-//                       width: "80%",
-//                       display: "flex",
-//                       // alignItems: "center",
-//                       justifyContent: "center",
-//                     }}
-//                   >
-//                     <img
-//                       src={index === 1 ? "" : item.image}
-//                       style={{ height: "70%", width: "60%" }}
-//                       alt=""
-//                     />
-//                   </div>
-//                   <div
-//                     style={{
-//                       flex: 5,
-//                       display: "flex",
-//                       alignItems: "center",
-//                       justifyContent: "center",
-//                       background: "red",
-//                     }}
-//                   >
-//                     <div
-//                       style={{
-//                         width: "70%",
-//                         height: "80%",
-//                         display: "flex",
-//                         flexDirection: "column",
-//                         justifyContent: "center",
-//                       }}
-//                     >
-//                       <h2>{item.title}</h2>
-//                       <p
-//                         style={{
-//                           display: "flex",
-//                           justifyContent: "center",
-//                           alignItems: "center",
-//                           // textAlign: "justify",
-//                           // fontFamily: "cursive",
-//                           // fontWeight: "bold",
-//                         }}
-//                       >
-//                         {item.descrip}
-//                       </p>
-//                     </div>
-//                   </div>
-//                 </div>
-//               </>
-//             );
-//           })}
-//         </div>
-//       </div>
-//     </div>
-//   );
-// };
-
-// export default Aboutus;
-
 import React from "react";
-import image from "../Images/Group-713.png";
+import image from "../Images/about_us.png";
+import image2 from "../Images/about2.png";
+import vector1 from "../Images/Vector (Stroke).png";
+import vector2 from "../Images/Vector.png";
+import vector3 from "../Images/Vector (1).png";
 import { ServiceData, TextData, Teee } from "../datas";
 import HomeSubFeature from "./HomeSubFeacher";
 import TopDiv from "./TopDiv";
 import { FaQuoteLeft } from "react-icons/fa";
+import SecurityImg from "../Images/security_02.png";
+import AccountingImg from "../Images/Accounting & BookkeepingAccounting & Bookkeeping 1.png";
+import VersualImg from "../Images/virtual resourcing 2.png";
+import DigitalImg from "../Images/digital_marketing.png";
+import { NavLink } from "react-router-dom";
+import { motion } from "framer-motion";
 
 const Aboutus = () => {
   const ServiceItem = ServiceData[0];
   return (
     <div>
       <TopDiv
-        title="Your startegic seccess partner in scalability and seamless operations"
-        text=" Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-        Assumenda voluptatem repellat, consequuntur id aliquid aliquam
-        tenetur accusantium, harum unde quis in, non fugiat veritatis
-        possimus. Molestiae,"
+        title="Welcome to Serviqore! We're dedicated to excellence, integrity and professional service."
+        text="Our mission is to be the reliable ally that empowers businesses with scalable solutions and fosters enduring partnerships for sustained growth and success."
         image={image}
       />
       <div
@@ -309,17 +33,21 @@ const Aboutus = () => {
           justifyContent: "center",
         }}
       >
-        <div style={{ width: "50%", textAlign: "center" }}>
-          {TextData.map((item, i) => {
-            return (
-              <>
-                <p style={{ fontSize: 35, fontWeight: "bolder" }}>
-                  A Customized Plan of action
-                </p>
-                <p style={{ fontSize: 20 }}>{item.text}</p>
-              </>
-            );
-          })}
+        <div
+          style={{
+            height: "90%",
+            width: "70%",
+            fontSize: 35,
+            fontWeight: "bold",
+            textAlign: "center",
+          }}
+        >
+          <p>
+            ServiQore envisions itself as the catalyst for robust growth and
+            long term success, both for our clients and our company, through our
+            innovative approach and steadfast commitment to excellence in the
+            BPO industry.
+          </p>
         </div>
       </div>
       <div
@@ -347,21 +75,34 @@ const Aboutus = () => {
               justifyContent: "center",
             }}
           >
-            <img src={image} style={{ height: "80%", width: "90%" }} alt="dd" />
+            <img
+              src={image2}
+              style={{ height: "80%", width: "90%" }}
+              alt="dd"
+            />
           </div>
-          <div style={{ flex: 5 }}>
-            <p style={{ fontSize: 42, fontWeight: "bold", lineHeight: 1 }}>
-              {" "}
-              With a proven track record of achievments.
+          <div
+            style={{
+              flex: 5,
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              justifyContent: "center",
+              fontSize: 18,
+              textAlign: "justify",
+            }}
+          >
+            <p style={{}}>
+              we go beyond traditional BPO paradigm of service delivery We're
+              here to build collaborations We understand that businesses need
+              more than solutions they need a reliable ally committed to their
+              growth That's who we are a dependable team ready to add real value
+              to your operations.
             </p>
             <p style={{ textAlign: "justify" }}>
-              Lorem ipsum dolor sit amet, consectetur adipisicing elit.
-              Assumenda voluptatem repellat, consequuntur id aliquid aliquam
-              tenetur accusantium, harum unde quis in, non fugiat veritatis
-              possimus. Molestiae, odio ullam alias nobis consequuntur eius
-              officia quam quo voluptatibus dolorum sit perspiciatis aliquam.
-              Optio laborum autem exercitationem repellat ab. In cupiditate
-              fugit sit id quae ratione fugiat quisquam vitae necessitatibus
+              Our goal is simple empower businesses, no matter their size, with
+              solutions that build long term partnerships, not just
+              transactions.
             </p>
           </div>
         </div>
@@ -438,69 +179,49 @@ const Aboutus = () => {
               }}
             >
               <p style={{ textAlign: "center", padding: 30, marginTop: -20 }}>
-                Lorem ipsum dolor, sit amet consectetur adipisicing elit.
-                Officia quas assumenda dolorem explicabo praesentium magnam
-                error earum perferendis nam, illo cumque, ab, libero in
-                asperiores? Ullam, eaque non est veritatis incidunt molestiae,
-                porro eligendi impedit itaque laboriosam dignissimos
-                perspiciatis. Error excepturi quisquam sed consequuntur pariatur
-                rerum beatae ex deserunt cumque!
+                We've cultivated collaborative partnerships with 200+ security
+                professionals and 50+ job sites, enhancing service customization
+                and client satisfaction. Through streamlined operations, we
+                maximize effectiveness and productivity, resolving over 100
+                incidents every week.
               </p>{" "}
             </div>
           </div>
         </div>
       </div>
-      {ServiceData.map((item, i) => {
-        return (
-          <div
-            style={{
-              height: 400,
-              width: "100%",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-            }}
-          >
-            <div
-              style={{
-                height: "95%",
-                width: "70%",
-                display: "flex",
-                flexDirection: i % 2 === 0 ? "row-reverse" : "row",
-              }}
-            >
-              <div
-                style={{
-                  width: "50%",
-                  height: "95%",
-                  display: "flex",
-                  alignItems: "center",
-                  justifyContent: "center",
-                }}
-              >
-                <img
-                  src={item.image}
-                  style={{ height: "90%", width: "90%" }}
-                  alt=""
-                />
-              </div>
-              <div
-                style={{
-                  width: "50%",
-                  height: "95%",
-                  display: "flex",
-                  flexDirection: "column",
-                  justifyContent: "center",
-                  padding: 10,
-                }}
-              >
-                <h1>{item.title}</h1>
-                <p>{item.descrip}</p>
-              </div>
-            </div>
-          </div>
-        );
-      })}
+      <div
+        style={{
+          height: 200,
+          width: "100%",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <div
+          style={{
+            height: "90%",
+            width: "80%",
+            display: "flex",
+            flexDirection: "column",
+            alignItems: "center",
+            justifyContent: "center",
+            fontSize: 18,
+            textAlign: "center",
+          }}
+        >
+          <p style={{ fontSize: 32, fontWeight: "bold" }}>What we do?</p>
+          <p>
+            Drawing from our collective expertise in Accounting, Virtual
+            Resources and Digital Marketing, we craft tailored strategies for
+            every client. Whether a startup or a big player, our mission remains
+            constant: to boost success with scalable solutions for smooth
+            operations and sustainable growth. Our diverse range of services
+            includes:
+          </p>
+        </div>
+      </div>
+
       <div
         style={{
           height: 450,
@@ -513,54 +234,367 @@ const Aboutus = () => {
         <div
           style={{
             height: "95%",
-            width: "85%",
+            width: "90%",
+            display: "flex",
+            flexDirection: "row",
+            alignItems: "center",
+            justifyContent: "space-evenly",
+            fontSize: 18,
+            textAlign: "center",
+          }}
+        >
+          <NavLink
+            to="/security"
+            style={{
+              height: "90%",
+              width: "25%",
+              display: "flex",
+              flexDirection: "column",
+              textDecoration: "none",
+              color: "black",
+            }}
+          >
+            <div
+              style={{
+                flex: 7,
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
+              <motion.div
+                style={{
+                  height: "90%",
+                  width: "70%",
+                  background: "#EEEEEE",
+                  borderRadius: 10,
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+                whileHover={{
+                  scale: 1.1,
+                  border: "2px solid orange",
+                }}
+              >
+                <img
+                  src={SecurityImg}
+                  alt="dd"
+                  style={{ height: "80%", width: "80%" }}
+                />
+              </motion.div>
+            </div>
+            <div style={{ flex: 3 }}>
+              <p style={{ fontWeight: "bold", fontSize: 24 }}>
+                Security Guard Monitoring &<br /> Dispatch
+              </p>
+            </div>
+          </NavLink>
+          <NavLink
+            to="/virsual"
+            style={{
+              height: "90%",
+              width: "25%",
+              display: "flex",
+              flexDirection: "column",
+              textDecoration: "none",
+              color: "black",
+            }}
+          >
+            <div
+              style={{
+                flex: 7,
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
+              <motion.div
+                style={{
+                  height: "90%",
+                  width: "70%",
+                  background: "#EEEEEE",
+                  borderRadius: 10,
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+                whileHover={{
+                  scale: 1.1,
+                  border: "2px solid orange",
+                }}
+              >
+                <img
+                  src={VersualImg}
+                  alt="dd"
+                  style={{ height: "80%", width: "80%" }}
+                />
+              </motion.div>
+            </div>
+            <div style={{ flex: 3 }}>
+              <p style={{ fontWeight: "bold", fontSize: 24 }}>
+                Virtual Resourcing
+              </p>
+            </div>
+          </NavLink>
+          <NavLink
+            to="/accounting"
+            style={{
+              height: "90%",
+              width: "25%",
+              display: "flex",
+              flexDirection: "column",
+              textDecoration: "none",
+              color: "black",
+            }}
+          >
+            <div
+              style={{
+                flex: 7,
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
+              <motion.div
+                style={{
+                  height: "90%",
+                  width: "70%",
+                  background: "#EEEEEE",
+                  borderRadius: 10,
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+                whileHover={{
+                  scale: 1.1,
+                  border: "2px solid orange",
+                }}
+              >
+                <img
+                  src={AccountingImg}
+                  alt="dd"
+                  style={{ height: "80%", width: "80%" }}
+                />
+              </motion.div>
+            </div>
+            <div style={{ flex: 3 }}>
+              <p style={{ fontWeight: "bold", fontSize: 24 }}>
+                Accounting & Bookkeeping
+              </p>
+            </div>
+          </NavLink>
+          <NavLink
+            to="/marketing"
+            style={{
+              height: "90%",
+              width: "25%",
+              display: "flex",
+              flexDirection: "column",
+              textDecoration: "none",
+              color: "black",
+            }}
+          >
+            <div
+              style={{
+                flex: 7,
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+              }}
+            >
+              <motion.div
+                style={{
+                  height: "90%",
+                  width: "70%",
+                  background: "#EEEEEE",
+                  borderRadius: 10,
+                  display: "flex",
+                  alignItems: "center",
+                  justifyContent: "center",
+                }}
+                whileHover={{
+                  scale: 1.1,
+                  border: "2px solid orange",
+                }}
+              >
+                <img
+                  src={DigitalImg}
+                  alt="dd"
+                  style={{ height: "80%", width: "80%" }}
+                />
+              </motion.div>
+            </div>
+            <div style={{ flex: 3 }}>
+              <p style={{ fontWeight: "bold", fontSize: 24 }}>
+                Digital Marketing
+              </p>
+            </div>
+          </NavLink>
+        </div>
+      </div>
+
+      <div
+        style={{
+          height: 400,
+          width: "100%",
+          textAlign: "center",
+        }}
+      >
+        <div style={{ flex: 1, height: "20%", width: "100%" }}>
+          <h1>Why Choose us?</h1>
+          <p>
+            We work together to take your security business to its fullest
+            potential by:
+          </p>
+        </div>
+        <div
+          style={{
+            flex: 9,
+            height: "80%",
+            width: "100%",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <div
+            style={{
+              width: "90%",
+              height: "90%",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "space-around",
+            }}
+          >
+            <div
+              style={{
+                height: "90%",
+                width: "30%",
+                display: "flex",
+                flexDirection: "column",
+              }}
+            >
+              <div style={{ height: "45%", width: "100%" }}>
+                <img
+                  src={vector1}
+                  alt="dd"
+                  style={{ height: 100, width: 100 }}
+                />
+              </div>
+              <div style={{ height: "55%", width: "100%" }}>
+                Response on time to address issues within a 2 minute timeframe.
+              </div>
+            </div>
+            <div
+              style={{
+                height: "90%",
+                width: "30%",
+                display: "flex",
+                flexDirection: "column",
+              }}
+            >
+              <div style={{ height: "45%", width: "100%" }}>
+                <img
+                  src={vector2}
+                  alt="dd"
+                  style={{ height: 100, width: 100 }}
+                />
+              </div>
+              <div style={{ height: "55%", width: "100%" }}>
+                Enabling you to concentrate on essential business tasks and
+                expansion. We support clients in concentrating on core
+                activities while simplifying{" "}
+                <b>monitoring, communication, and documentation processes.</b>
+              </div>
+            </div>
+            <div
+              style={{
+                height: "90%",
+                width: "30%",
+                display: "flex",
+                flexDirection: "column",
+              }}
+            >
+              <div style={{ height: "45%", width: "100%" }}>
+                <img
+                  src={vector3}
+                  alt="dd"
+                  style={{ height: 100, width: 100 }}
+                />
+              </div>
+              <div style={{ height: "55%", width: "100%" }}>
+                Having tech savvy and seasoned team to oversee guards round the
+                clock, ensuring{" "}
+                <b>
+                  tailored security strategies and compliance with protocols.
+                </b>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        style={{
+          height: 400,
+          width: "100%",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+        }}
+      >
+        <div
+          style={{
+            width: "80%",
+            height: "95%",
             display: "flex",
             flexDirection: "column",
           }}
         >
           <div
             style={{
-              height: "20%",
-              width: "100%",
-              borderBottom: "1px solid black",
-              display: "flex",
-              alignItems: "center",
-              fontSize: 42,
-              fontWeight: "bold",
-            }}
-          >
-            Testimonial
-          </div>
-          <div
-            style={{
-              height: "80%",
-              width: "100%",
+              flex: 3,
               display: "flex",
               alignItems: "center",
               justifyContent: "center",
-              gap: 20,
+              flexDirection: "column",
             }}
           >
-            {Teee.map((info, i) => {
-              return (
-                <div style={{ height: "90%", width: "30%" }}>
-                  <FaQuoteLeft
-                    style={{ color: "#D9EDBF", height: 50, width: 50 }}
-                  />
-                  <p
-                    style={{
-                      height: "60%",
-                      width: "100%",
-                      fontSize: 18,
-                      textAlign: "justify",
-                    }}
-                  >
-                    {info.descrip}
-                  </p>
-                  <h3 style={{ height: "30%", width: "100%" }}>{info.title}</h3>
-                </div>
-              );
-            })}
+            <img
+              src={vector1}
+              alt="vv"
+              style={{ height: "80%", widows: "80%" }}
+            />
+            <h1>Real value for money</h1>
+          </div>
+          <div
+            style={{
+              flex: 7,
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <div style={{ width: "75%", height: "100%" }}>
+              <li>
+                We have a track record of helping clients grow their businesses
+                significantly, with growth rates ranging from 300% to 500% in
+                the first year.
+              </li>
+              <li>
+                Our services lead to significant savings on monthly staffing
+                costs, up to 50%, compared to traditional in house operations
+              </li>
+              <li>
+                Our staffing model is flexible, allowing quick adjustments to
+                meet changing demand
+              </li>
+              <li>
+                We consistently work towards streamlining processes , finding
+                ways to boost efficiency and cut costs for our clients,
+                resulting in long term savings and value creation
+              </li>
+            </div>
           </div>
         </div>
       </div>

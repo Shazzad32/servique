@@ -2,6 +2,8 @@ import React from "react";
 import image from "../Images/Group-713.png";
 import { Card } from "@mui/material";
 import FormComponent from "./FormComponent";
+import { WhyWorkData } from "../datas";
+import Carddd from "../Components/Card";
 
 const Career = () => {
   return (
@@ -9,7 +11,7 @@ const Career = () => {
       <div>
         <div
           style={{
-            height: 420,
+            height: 400,
             width: "100%",
             display: "flex",
             alignItems: "center",
@@ -37,164 +39,25 @@ const Career = () => {
           </div>
         </div>
       </div>
-      <div
-        style={{
-          height: 400,
-          width: "100%",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-        }}
-      >
-        <div style={{ height: "100%", width: "80%" }}>
-          <div
-            style={{
-              height: "20%",
-              width: "100%",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "center",
-              fontSize: 32,
-              fontWeight: "bold",
-            }}
-          >
-            Why Works With Us
-          </div>
-          <div
-            style={{
-              height: "80%",
-              width: "100%",
-              display: "flex",
-              alignContent: "center",
-              justifyContent: "space-around",
-            }}
-          >
-            <div
-              style={{
-                height: "100%",
-                width: "22%",
-                display: "flex",
-                alignItems: "center",
-                flexDirection: "column",
-                justifyContent: "center",
-                lineHeight: 1.3,
-              }}
-            >
-              <img
-                src={image}
-                alt="11"
-                style={{ height: 100, width: 100, borderRadius: 50 }}
-              />
-              <p
-                style={{
-                  fontSize: 22,
-                  fontWeight: "bold",
-                  textAlign: "center",
-                }}
-              >
-                Dynamic Work Enviroment
-              </p>
-              <p style={{ textAlign: "justify" }}>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex,
-                illo. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Ex, illo.Lorem ipsum dolor sit amet consectetur adipisicing
-                elit.
-              </p>
-            </div>
-            <div
-              style={{
-                height: "100%",
-                width: "22%",
-                display: "flex",
-                alignItems: "center",
-                flexDirection: "column",
-                justifyContent: "center",
-                lineHeight: 1.3,
-              }}
-            >
-              <img
-                src={image}
-                alt="11"
-                style={{ height: 100, width: 100, borderRadius: 50 }}
-              />
-              <p
-                style={{
-                  fontSize: 22,
-                  fontWeight: "bold",
-                  textAlign: "center",
-                }}
-              >
-                Dynamic Work Enviroment
-              </p>
-              <p style={{ textAlign: "justify" }}>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex,
-                illo. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Ex, illo.
-              </p>
-            </div>
-            <div
-              style={{
-                height: "100%",
-                width: "22%",
-                display: "flex",
-                alignItems: "center",
-                flexDirection: "column",
-                justifyContent: "center",
-                lineHeight: 1.3,
-              }}
-            >
-              <img
-                src={image}
-                alt="11"
-                style={{ height: 100, width: 100, borderRadius: 50 }}
-              />
-              <p
-                style={{
-                  fontSize: 22,
-                  fontWeight: "bold",
-                  textAlign: "center",
-                }}
-              >
-                Dynamic Work Enviroment
-              </p>
-              <p style={{ textAlign: "justify" }}>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex,
-                illo. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Ex, illo.
-              </p>
-            </div>
-            <div
-              style={{
-                height: "100%",
-                width: "22%",
-                display: "flex",
-                alignItems: "center",
-                flexDirection: "column",
-                justifyContent: "center",
-                lineHeight: 1.3,
-              }}
-            >
-              <img
-                src={image}
-                alt="11"
-                style={{ height: 100, width: 100, borderRadius: 50 }}
-              />
-              <p
-                style={{
-                  fontSize: 22,
-                  fontWeight: "bold",
-                  textAlign: "center",
-                }}
-              >
-                Dynamic Work Enviroment
-              </p>
-              <p style={{ textAlign: "justify" }}>
-                Lorem ipsum dolor sit amet consectetur adipisicing elit. Ex,
-                illo. Lorem ipsum dolor sit amet consectetur adipisicing elit.
-                Ex, illo.
-              </p>
-            </div>
-          </div>
+      <div>
+        <h1 style={{ textAlign: "center" }}>Why Works With Us</h1>
+        <div
+          style={{
+            display: "flex",
+            justifyContent: "center",
+            flexWrap: "wrap",
+            gap: "20px",
+            padding: "20px",
+          }}
+        >
+          {WhyWorkData.map((data, index) => (
+            <Carddd
+              key={index}
+              icon={data.icon}
+              title={data.title}
+              description={data.description}
+            />
+          ))}
         </div>
       </div>
       <div
@@ -423,7 +286,6 @@ const Career = () => {
           </p>
         </div>
       </div>
-
       <div
         style={{
           height: 350,
@@ -519,7 +381,6 @@ const Career = () => {
           </div>
         </div>
       </div>
-      <FormComponent />
     </>
   );
 };

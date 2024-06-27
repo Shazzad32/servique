@@ -1,48 +1,211 @@
-import React from "react";
-import image from "../Images/Group-713.png";
-import { TextData, FeacherData, WhyChoiceUs } from "../datas";
-import { Card } from "@mui/material";
-import TopDiv from "./TopDiv";
-import HomeSubFeature from "./HomeSubFeacher";
-import { HiMiniUserGroup } from "react-icons/hi2";
-import { PiHandCoinsThin } from "react-icons/pi";
+import { React, useState } from "react";
+import Slider from "react-slick";
+import "slick-carousel/slick/slick.css";
+import "slick-carousel/slick/slick-theme.css";
+import HomeSlideShow from "./HomeSlideShow";
+import { HedderData, Testimonials, FeacherData } from "../datas";
+import AddOutlinedIcon from "@mui/icons-material/AddOutlined";
+import RemoveOutlinedIcon from "@mui/icons-material/RemoveOutlined";
+import { Card, InputAdornment, TextField } from "@mui/material";
+
+import image2 from "../Images/about2.png";
+import im1 from "../Images/one.png";
+import im2 from "../Images/two.png";
+import im3 from "../Images/three.png";
+import im4 from "../Images/four.png";
+import im5 from "../Images/five.png";
+import im6 from "../Images/six.png";
+import im7 from "../Images/seven.png";
+import Cote from "../Images/cotation.png";
+import supervision from "../Images/supervision.png";
+import FaqComp from "./FaqComp";
 
 const Home = () => {
-  const itemData = FeacherData[0];
+  const settings = {
+    dots: true,
+    infinite: true,
+    speed: 1000,
+    autoplay: true,
+    autoplaySpeed: 2000,
+    slidesToShow: 1,
+    slidesToScroll: 1,
+  };
+
   return (
     <>
-      <TopDiv
-        title="Your Remote Security Dispatch Center"
-        text="At Serviqore, we specialize in empowering Security guard companis with advanced remote monitoring and supervision solutions to enhance there operational efficiency and effectiveness."
-        image={image}
-      />
       <div
         style={{
-          height: 300,
+          height: "100vh",
+          width: "100%",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          flexDirection: "column",
+        }}
+      >
+        <div style={{ height: "14vh", width: "100%" }}></div>
+        <div
+          style={{
+            height: "86vh",
+            width: "100%",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <div
+            style={{
+              width: "100%",
+              height: 600,
+              overflow: "hidden",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <div
+              style={{
+                height: 600,
+                width: "80%",
+              }}
+            >
+              <Slider {...settings}>
+                {HedderData.map((item, index) => (
+                  <div key={index}>
+                    <HomeSlideShow
+                      title={item.title}
+                      text={item.text}
+                      image={item.image}
+                    />
+                  </div>
+                ))}
+              </Slider>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div
+        style={{
+          height: 320,
           width: "100%",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
         }}
       >
-        <div style={{ width: "50%", textAlign: "center" }}>
-          {TextData.map((item, i) => {
-            return (
-              <>
-                <p style={{ fontSize: 35, fontWeight: "bolder" }}>
-                  A Customized Plan of action
-                </p>
-                <p style={{ fontSize: 20 }}>{item.text}</p>
-              </>
-            );
-          })}
-
-          <p></p>
+        <div style={{ height: "100%", width: "80%", textAlign: "center" }}>
+          <p style={{ fontSize: 44, fontWeight: "bold" }}>
+            We transcend the traditional BPO paradigm <br />
+            by fostering collaborations
+          </p>
+          <p style={{ fontSize: 22 }}>
+            We understand that businesses require more than just solutions; they
+            need a reliable ally
+            <br /> committed to their growth journey. That's precisely who we
+            are – a dependable team poised to <br />
+            add tangible value to your operations.
+          </p>
         </div>
       </div>
       <div
         style={{
-          height: 650,
+          height: 400,
+          width: "100%",
+          display: "flex",
+          alignItems: "center",
+          justifyContent: "center",
+          background: "#EEEEEE",
+        }}
+      >
+        <div
+          style={{
+            height: "90%",
+            width: "80%",
+            display: "flex",
+          }}
+        >
+          <div
+            style={{
+              flex: 5,
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <img
+              src={image2}
+              style={{ height: "80%", width: "90%" }}
+              alt="dd"
+            />
+          </div>
+          <div
+            style={{
+              flex: 5,
+              display: "flex",
+              flexDirection: "column",
+              alignItems: "center",
+              justifyContent: "center",
+              fontSize: 18,
+            }}
+          >
+            <h1 style={{}}>With a proven track record of achievements</h1>
+            <p style={{ textAlign: "justify" }}>
+              we've successfully built and operated Remote Dispatch Centers for
+              four clients in the USA. In the first year of operation, we
+              implemented three Remote Dispatch Center solutions, driving
+              significant business expansion. Our cost-saving initiatives have
+              optimized operational efficiency, resulting in savings of up to
+              50% for our clients.
+            </p>
+          </div>
+        </div>
+      </div>
+      <div style={{ height: 300, width: "100%", background: "#008D66" }}>
+        <div
+          style={{
+            height: "15%",
+            width: "100%",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <h1 style={{ textAlign: "center", marginTop: 80, color: "white" }}>
+            Some Of Our Key Clients
+          </h1>
+        </div>
+        <div
+          style={{
+            height: "85%",
+            width: "100%",
+            display: "flex",
+            alignItems: "center",
+            justifyContent: "center",
+          }}
+        >
+          <div
+            style={{
+              height: "90%",
+              width: "80%",
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "space-around",
+              gap: 50,
+            }}
+          >
+            <img src={im1} atl="" style={{ height: "30%", width: "7%" }} />
+            <img src={im2} atl="" style={{ height: "30%", width: "7%" }} />
+            <img src={im3} atl="" style={{ height: "30%", width: "11%" }} />
+            <img src={im4} atl="" style={{ height: "30%", width: "7%" }} />
+            <img src={im5} atl="" style={{ height: "30%", width: "13%" }} />
+            <img src={im6} atl="" style={{ height: "30%", width: "6%" }} />
+            <img src={im7} atl="" style={{ height: "30%", width: "6%" }} />
+          </div>
+        </div>
+      </div>
+      <div
+        style={{
+          height: 400,
           width: "100%",
           display: "flex",
           alignItems: "center",
@@ -54,223 +217,77 @@ const Home = () => {
             height: "95%",
             width: "90%",
             display: "flex",
-            flexWrap: "wrap",
-            alignItems: "center",
-            justifyContent: "center",
-            gap: 20,
-          }}
-        >
-          {FeacherData.map((info, i) => {
-            return (
-              <Card
-                style={{
-                  height: "46%",
-                  width: "32%",
-                  display: "flex",
-                  flexDirection: "column",
-                  background: "#F6F5F2",
-                }}
-              >
-                <div
-                  style={{
-                    flex: 3,
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    padding: 5,
-                  }}
-                >
-                  <div
-                    style={{
-                      height: 80,
-                      width: 80,
-                      borderRadius: 40,
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "center",
-                      background: "#B3C8CF",
-                    }}
-                  >
-                    {info.icon}
-                  </div>
-                </div>
-                <div
-                  style={{
-                    flex: 1.5,
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                  }}
-                >
-                  <h2>{info.title}</h2>
-                </div>
-                <div
-                  style={{
-                    flex: 5.5,
-                    display: "flex",
-                    alignItems: "center",
-                    justifyContent: "center",
-                    textAlign: "justify",
-                    padding: 10,
-                    marginTop: -20,
-                  }}
-                >
-                  <p>{info.descrip}</p>
-                </div>
-              </Card>
-            );
-          })}
-        </div>
-        {/* <div
-            style={{
-              flex: 5,
-              height: "50%",
-              width: "100%",
-              display: "flex",
-              alignItems: "center",
-              justifyContent: "space-around",
-            }}
-          >
-            {FeacherData.map((text, i) => {
-              return (
-                <div
-                  style={{
-                    height: "100%",
-                    width: "31%",
-                    display: "flex",
-                    alignItems: "center",
-                    flexDirection: "column",
-                    justifyContent: "center",
-                    lineHeight: 1.2,
-                    background: "red",
-                  }}
-                >
-                  <img
-                    src={text.image}
-                    alt="11"
-                    style={{ height: 100, width: 100, borderRadius: 50 }}
-                  />
-                  <p
-                    style={{
-                      fontSize: 22,
-                      fontWeight: "bold",
-                      textAlign: "center",
-                      lineHeight: 0.1,
-                    }}
-                  >
-                    {text.title}
-                  </p>
-                  <p style={{ textAlign: "justify" }}>{text.descrip}</p>
-                </div>
-              );
-            })}
-          </div> */}
-      </div>
-      <div
-        style={{
-          width: "100%",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-        }}
-      >
-        <div style={{ height: "100%", width: "80%" }}>
-          <div
-            style={{
-              height: "100%",
-              width: "100%",
-              display: "flex",
-              alignContent: "center",
-              justifyContent: "space-around",
-              textWrap: "wrap",
-              gap: 20,
-            }}
-          ></div>
-        </div>
-      </div>
-      <div
-        style={{
-          height: 500,
-          width: "100%",
-          display: "flex",
-          alignItems: "center",
-          justifyContent: "center",
-        }}
-      >
-        <div
-          style={{
-            height: 400,
-            width: "90%",
-            display: "flex",
-            alignItems: "center",
-            justifyContent: "center",
             flexDirection: "column",
           }}
         >
           <div
             style={{
-              height: "10%",
+              height: "15%",
               width: "100%",
+              borderBottom: "2px solid gray",
               display: "flex",
               alignItems: "center",
-              justifyContent: "center",
+              justifyContent: "flex-start",
             }}
           >
-            <h1>Why Work with us</h1>
+            <h1>Testimonials</h1>
           </div>
           <div
             style={{
-              height: "90%",
+              height: "85%",
+              width: "100%",
               display: "flex",
               alignItems: "center",
-              justifyContent: "center",
-              gap: 20,
+              justifyContent: "space-between",
+              gap: 30,
             }}
           >
-            {WhyChoiceUs.map((item, i) => {
+            {Testimonials.map((info, i) => {
               return (
-                <Card
-                  style={{
-                    height: "90%",
-                    width: "24%",
-                    boxShadow: "rgba(0, 0, 0, 0.16) 0px 1px 4px",
-                  }}
-                >
+                <>
                   <div
                     style={{
-                      height: "30%",
-                      width: "100%",
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "center",
+                      height: "90%",
+                      width: "30%",
                     }}
                   >
-                    {item.icon}
+                    <div style={{ height: "15%", width: "100%" }}>
+                      <img
+                        src={Cote}
+                        alt="3"
+                        style={{
+                          height: "90%",
+                          marginLeft: -20,
+                          marginTop: 20,
+                        }}
+                      />
+                    </div>
+                    <div
+                      style={{
+                        height: "70%",
+                        width: "100%",
+                        display: "flex",
+                        alignItems: "center",
+                        textAlign: "justify",
+                      }}
+                    >
+                      {info.text}
+                    </div>
+                    <div
+                      style={{
+                        height: "15%",
+                        width: "100%",
+                        fontSize: 20,
+                        fontWeight: "bold",
+                        display: "flex",
+                        alignItems: "center",
+                        justifyContent: "flex-start",
+                      }}
+                    >
+                      {info.title}
+                    </div>
                   </div>
-                  <div
-                    style={{
-                      height: "10%",
-                      width: "100%",
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "center",
-                    }}
-                  >
-                    <h3 style={{}}>{item.title}</h3>
-                  </div>
-                  <div
-                    style={{
-                      height: "60%",
-                      width: "100%",
-                      display: "flex",
-                      alignItems: "center",
-                      justifyContent: "center",
-                      textAlign: "justify",
-                    }}
-                  >
-                    <p style={{ fontSize: 16, padding: 10 }}>{item.descrip}</p>
-                  </div>
-                </Card>
+                </>
               );
             })}
           </div>
@@ -278,32 +295,70 @@ const Home = () => {
       </div>
       <div
         style={{
-          height: 250,
+          height: 400,
           width: "100%",
           display: "flex",
           alignItems: "center",
           justifyContent: "center",
+          background: "#EEEEEE",
         }}
       >
-        <div style={{ width: "50%", textAlign: "center" }}>
-          {TextData.map((item, i) => {
-            return (
-              <>
-                <p style={{ fontSize: 35, fontWeight: "bolder" }}>
-                  Get Started Today
-                </p>
-                <p style={{}}>
-                  Lorem ipsum, dolor sit amet consectetur adipisicing elit.
-                  Tempora culpa tempore quasi inventore quae! Quam corrupti
-                  tempora
-                </p>
-              </>
-            );
-          })}
-
-          <p></p>
+        <div
+          style={{
+            height: "90%",
+            width: "50%",
+            display: "flex",
+          }}
+        >
+          <div
+            style={{
+              flex: 5,
+              display: "flex",
+              alignItems: "center",
+              justifyContent: "center",
+            }}
+          >
+            <img
+              src={supervision}
+              style={{ height: "70%", width: "80%" }}
+              alt="dd"
+            />
+          </div>
+          <div
+            style={{
+              flex: 5,
+              display: "flex",
+              flexDirection: "column",
+              // alignItems: "center",
+              justifyContent: "center",
+              // fontSize: 18,
+              lineHeight: 1,
+            }}
+          >
+            <p style={{ fontSize: 32, fontWeight: "bold" }}>
+              Ready to elevate your security services to the next level?
+            </p>
+            <p style={{ fontSize: 32, fontWeight: "bold", marginTop: -10 }}>
+              Partner with Serviqore
+            </p>
+            <p
+              style={{
+                height: 50,
+                width: "40%",
+                background: "#008D66",
+                borderRadius: 10,
+                display: "flex",
+                alignItems: "center",
+                justifyContent: "center",
+                color: "white",
+              }}
+            >
+              Get a Quote
+            </p>
+          </div>
         </div>
       </div>
+      {<FaqComp />}
     </>
   );
 };

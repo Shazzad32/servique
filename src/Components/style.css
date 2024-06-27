@@ -1,0 +1,39 @@
+.dashboard {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  
+  .dashboard-item {
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    margin: 16px;
+    padding: 16px;
+    width: 300px;
+    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  }
+  
+  .dashboard-image {
+    width: 100%;
+    height: auto;
+    border-radius: 8px 8px 0 0;
+  }
+  
+  .dashboard-title {
+    font-size: 1.25em;
+    margin: 16px 0 8px;
+  }
+  
+  .dashboard-text {
+    font-size: 1em;
+    margin-bottom: 8px;
+  }
+  
+  .dashboard-list {
+    list-style-type: disc;
+    padding-left: 20px;
+  }
+  
+  .dashboard-list li {
+    margin-bottom: 4px;
+  }

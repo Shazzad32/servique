@@ -156,7 +156,7 @@
 // export default Nav;
 
 import React, { useState } from "react";
-import logo from "../Images/logo.png";
+import logo from "../Images/navlogo.png";
 import { NavLink, useLocation } from "react-router-dom";
 
 const Nav = () => {
@@ -179,7 +179,7 @@ const Nav = () => {
         boxShadow: "rgba(0, 0, 0, 0.16) 0px 1px 4px",
       }}
     >
-      <div style={{ flex: 5, display: "flex" }}>
+      <div style={{ flex: 4.5, display: "flex" }}>
         <div
           style={{
             display: "flex",
@@ -195,7 +195,6 @@ const Nav = () => {
       <div
         style={{
           flex: 5,
-          background: "",
           display: "flex",
           alignItems: "center",
           justifyContent: "space-around",
@@ -216,7 +215,7 @@ const Nav = () => {
             textDecoration: "none",
             // background: activeButton === "Home" ? "green" : "orange",
             fontWeight: "bold",
-            color: activeButton === "Home" ? "green" : "black",
+            color: activeButton === "Home" ? "#008D66" : "black",
           }}
         >
           HOME
@@ -235,7 +234,7 @@ const Nav = () => {
             textDecoration: "none",
             // background: activeButton === "Service" ? "green" : "orange",
             fontWeight: "bold",
-            color: activeButton === "Service" ? "green" : "black",
+            color: activeButton === "Service" ? "#008D66" : "black",
           }}
         >
           SERVICE
@@ -254,7 +253,7 @@ const Nav = () => {
             textDecoration: "none",
             // background: activeButton === "About" ? "green" : "orange",
             fontWeight: "bold",
-            color: activeButton === "About" ? "green" : "black",
+            color: activeButton === "About" ? "#008D66" : "black",
           }}
         >
           ABOUT US
@@ -273,7 +272,7 @@ const Nav = () => {
             textDecoration: "none",
             // background: activeButton === "Blogs" ? "green" : "orange",
             fontWeight: "bold",
-            color: activeButton === "Blogs" ? "green" : "black",
+            color: activeButton === "Blogs" ? "#008D66" : "black",
           }}
         >
           BLOGS
@@ -292,7 +291,7 @@ const Nav = () => {
             textDecoration: "none",
             // background: activeButton === "Career" ? "green" : "orange",
             fontWeight: "bold",
-            color: activeButton === "Career" ? "green" : "black",
+            color: activeButton === "Career" ? "#008D66" : "black",
           }}
         >
           CAREER
@@ -311,7 +310,7 @@ const Nav = () => {
             textDecoration: "none",
             // background: activeButton === "FAQ" ? "green" : "orange",
             fontWeight: "bold",
-            color: activeButton === "FAQ" ? "green" : "black",
+            color: activeButton === "FAQ" ? "#008D66" : "black",
           }}
         >
           FAQ
@@ -330,12 +329,13 @@ const Nav = () => {
             textDecoration: "none",
             // background: activeButton === "Contact" ? "green" : "orange",
             fontWeight: "bold",
-            color: activeButton === "Contact" ? "green" : "black",
+            color: activeButton === "Contact" ? "#008D66" : "black",
           }}
         >
           CONTACT US
         </NavLink>
       </div>
+      <div style={{ flex: 0.5 }}></div>
     </div>
   );
 };
