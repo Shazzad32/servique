@@ -1,18 +1,41 @@
 {
   "files": {
-    "main.css": "/servique/static/css/main.e6c13ad2.css",
-    "main.js": "/servique/static/js/main.98c0c218.js",
-    "static/js/453.40308780.chunk.js": "/servique/static/js/453.40308780.chunk.js",
-    "static/media/logo.png": "/servique/static/media/logo.190789e4b7dabb034946.png",
-    "static/media/map.png": "/servique/static/media/map.638a52c658d2e1f6425b.png",
-    "static/media/Group-713.png": "/servique/static/media/Group-713.88c4b96d3b21c35e5db6.png",
-    "index.html": "/servique/index.html",
-    "main.e6c13ad2.css.map": "/servique/static/css/main.e6c13ad2.css.map",
-    "main.98c0c218.js.map": "/servique/static/js/main.98c0c218.js.map",
-    "453.40308780.chunk.js.map": "/servique/static/js/453.40308780.chunk.js.map"
+    "main.css": "/serviqore/static/css/main.aac5adea.css",
+    "main.js": "/serviqore/static/js/main.5786dbfb.js",
+    "static/js/453.40308780.chunk.js": "/serviqore/static/js/453.40308780.chunk.js",
+    "static/media/map.png": "/serviqore/static/media/map.638a52c658d2e1f6425b.png",
+    "static/media/Group-713.png": "/serviqore/static/media/Group-713.88c4b96d3b21c35e5db6.png",
+    "static/media/image_1.png": "/serviqore/static/media/image_1.16fab4f572b3f304ed6a.png",
+    "static/media/vigilens.png": "/serviqore/static/media/vigilens.77a5d9d20a3390682bee.png",
+    "static/media/security.png": "/serviqore/static/media/security.264e1115c4c422ed6b49.png",
+    "static/media/saveup.png": "/serviqore/static/media/saveup.036b77dc6d253dc63904.png",
+    "static/media/fast response 1.png": "/serviqore/static/media/fast response 1.c297f2bff0f67ca70a16.png",
+    "static/media/about_us.png": "/serviqore/static/media/about_us.c17ab781790a10adb379.png",
+    "static/media/transparent.png": "/serviqore/static/media/transparent.a12b2956b54620309bad.png",
+    "static/media/security_02.png": "/serviqore/static/media/security_02.824b295e57c5217fdd25.png",
+    "static/media/image_7.png": "/serviqore/static/media/image_7.f95ba7749d516f3f9b46.png",
+    "static/media/supervision.png": "/serviqore/static/media/supervision.d57e91c4b6542b09e2ea.png",
+    "static/media/image_5.png": "/serviqore/static/media/image_5.de0ef6975176196d4ed1.png",
+    "static/media/Accounting & BookkeepingAccounting & Bookkeeping 1.png": "/serviqore/static/media/Accounting & BookkeepingAccounting & Bookkeeping 1.a107d06238ceb5830948.png",
+    "static/media/image_4.png": "/serviqore/static/media/image_4.c6441a0fa6f30fb2c1eb.png",
+    "static/media/image_3.png": "/serviqore/static/media/image_3.7af6bfb54252561dd369.png",
+    "static/media/digital_marketing.png": "/serviqore/static/media/digital_marketing.8c1291b5b5a3b504b81a.png",
+    "static/media/about2.png": "/serviqore/static/media/about2.bdfb4b861f0fd2219d5b.png",
+    "static/media/image_2.png": "/serviqore/static/media/image_2.f2dcff6946da36622821.png",
+    "static/media/image_8.png": "/serviqore/static/media/image_8.2cddd439d7aa69bfdbea.png",
+    "static/media/image_6.png": "/serviqore/static/media/image_6.6a03e2f24074a1bf75af.png",
+    "static/media/virtual resourcing 2.png": "/serviqore/static/media/virtual resourcing 2.36fc498e28e7f745ee27.png",
+    "static/media/slick.svg": "/serviqore/static/media/slick.2630a3e3eab21c607e21.svg",
+    "static/media/slick.eot": "/serviqore/static/media/slick.a4e97f5a2a64f0ab1323.eot",
+    "static/media/slick.ttf": "/serviqore/static/media/slick.c94f7671dcc99dce43e2.ttf",
+    "static/media/slick.woff": "/serviqore/static/media/slick.295183786cd8a1389865.woff",
+    "index.html": "/serviqore/index.html",
+    "main.aac5adea.css.map": "/serviqore/static/css/main.aac5adea.css.map",
+    "main.5786dbfb.js.map": "/serviqore/static/js/main.5786dbfb.js.map",
+    "453.40308780.chunk.js.map": "/serviqore/static/js/453.40308780.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.e6c13ad2.css",
-    "static/js/main.98c0c218.js"
+    "static/css/main.aac5adea.css",
+    "static/js/main.5786dbfb.js"
   ]
 }
